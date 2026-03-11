@@ -7,11 +7,10 @@ function AddRoutineForm({ users, setUsers }) {
   const handleAddRoutine = () => {
     if (!routineTitle) return;
 
-    // Ajouter la nouvelle routine dans le state users
     const updatedUsers = users.map(user => {
       if (user.name === selectedUser) {
         const newRoutine = {
-          id: Date.now(), // id unique
+          id: Date.now(), 
           title: routineTitle,
           fait: false
         };
@@ -20,24 +19,24 @@ function AddRoutineForm({ users, setUsers }) {
       return user;
     });
 
-    setUsers(updatedUsers); // met à jour le state et localStorage via useEffect
-    setRoutineTitle(''); // réinitialiser le champ input
+    setUsers(updatedUsers); 
+    setRoutineTitle(''); 
   };
 
   return (
-    <div className=''>
-      <h1 className='text-center pt-10 text-3xl text-[#157A86]'>Daily Habits Tracker</h1>
-      <div className='flex justify-between mt-8 px-2 items-center bg-white mx-auto w-full h-[90px] rounded-md shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1' style={{ boxShadow: "0 4px 6px rgba(21, 122, 134, 0.5)" }}>
+    <div>
+      <h1 className='text-center pt-10 text-3xl font-bold text-[#041F9B]'>Daily Habits Tracker</h1>
+      <div className='flex justify-between mt-8 px-2 items-center bg-white mx-auto w-full h-[90px] rounded-md shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1'style={{ boxShadow: "0 4px 6px rgba(4, 31, 155, 0.5)" }}>
 
         <input 
           type="text" 
           placeholder='Nouvelle Routine' 
-          className="w-[750px] h-[38px] rounded-lg border border-gray-400 p-4" 
+          className="w-[750px] h-[38px] rounded-lg border border-[#041F9B80] p-4 hover:border-[#041F9B] focus:border-[#041F9B] focus:outline-none transition-colors duration-200" 
           value={routineTitle}
           onChange={(e) => setRoutineTitle(e.target.value)}
         />
         <select 
-          className='border border-gray-400 w-32 h-[38px] rounded-lg p-2'
+          className='border border-[#041F9B80] w-32 h-[38px] rounded-lg p-2 hover:border-[#041F9B] focus:border-[#041F9B] focus:outline-none transition-colors duration-200'
           value={selectedUser}
           onChange={(e) => setSelectedUser(e.target.value)}
         >
@@ -47,14 +46,15 @@ function AddRoutineForm({ users, setUsers }) {
         </select>
         <button 
           type="button" 
-          className='border text-white bg-[#157A86] w-28 h-[38px] rounded-lg'
-          onClick={handleAddRoutine}
-        >
+          className='border text-white bg-[#041F9B] w-28 h-[38px] rounded-lg cursor-pointer'
+          onClick={handleAddRoutine}>
           Ajouter
         </button>
       </div>
     </div>
   );
+
+  
 }
 
 export default AddRoutineForm;

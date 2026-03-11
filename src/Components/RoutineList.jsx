@@ -10,7 +10,7 @@ function RoutineList({ routines, userId, onDeleteRoutine, onToggleFait }) {
           routine={routine}
           userId={userId}
           onDeleteRoutine={onDeleteRoutine}
-          onToggleFait={onToggleFait} // ← pass this prop!
+          onToggleFait={onToggleFait} 
         />
       ))}
     </div>

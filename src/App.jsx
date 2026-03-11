@@ -1,10 +1,9 @@
 import './index.css'
-import AddRoutineForm from "./Componants/AddRoutineForm.jsx"
-import UserList from './Componants/UserList.jsx'
+import AddRoutineForm from "./Components/AddRoutineForm.jsx"
+import UserList from './Components/UserList.jsx'
 import { useState, useEffect } from "react";
 
 function App() {
-  // Initialisation depuis localStorage ou fallback sur userData par défaut
   const defaultUserData = [
     {
       "id": 1,
