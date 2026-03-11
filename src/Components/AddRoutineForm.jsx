@@ -25,7 +25,7 @@ function AddRoutineForm({ users, setUsers }) {
 
   return (
     <div>
-      <h1 className='text-center pt-10 text-3xl font-bold text-[#041F9B]'>Daily Habits Tracker</h1>
+      <h1 className='text-center pt-10 text-3xl font-bold text-[#041F9B] animate-pulse drop-shadow-[0_0_10px_rgba(4,31,155,0.8)]'>Daily Habits Tracker</h1>
       <div className='flex justify-between mt-8 px-2 items-center bg-white mx-auto w-full h-[90px] rounded-md shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1'style={{ boxShadow: "0 4px 6px rgba(4, 31, 155, 0.5)" }}>
 
         <input 
