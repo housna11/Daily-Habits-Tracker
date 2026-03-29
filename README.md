@@ -5,53 +5,44 @@ Elle permet également de suivre la progression individuelle et celle d’un gro
 
 ---
 
-## ✨ Fonctionnalités principales
-
-- ➕ **Ajouter une routine** pour suivre une nouvelle habitude.
-- 🗑️ **Supprimer une routine** lorsqu’elle n’est plus pertinente.
-- ✅ **Marquer une routine comme accomplie** pour la journée.
-- 📊 **Suivre la progression hebdomadaire** de chaque utilisateur.
-- 👥 **Voir la progression globale du groupe** pour encourager la motivation collective.
+## 🚀 Live Demo
+👉 [Voir le projet](https://dailyhabitstracker.vercel.app/)
 
 ---
 
-## 👤 Expérience utilisateur
+## ✨ Fonctionnalités principales
+- ➕ Ajouter une routine
+- 🗑️ Supprimer une routine
+- ✅ Marquer une routine comme accomplie / annuler
+- 📊 Suivre la progression de chaque utilisateur
+- 👥 Comparer la progression entre utilisateurs
 
-- Chaque utilisateur possède sa propre liste de routines.
-- Les routines peuvent être marquées comme **accomplies** chaque jour.
-- Un système de **progression hebdomadaire** permet de visualiser l’évolution des habitudes.
-- La progression globale du groupe permet de **comparer et encourager les membres**.
+---
+
+## 🛠️ Technologies utilisées
+- React.js
+- JavaScript (ES6)
+- Tailwind CSS
+- LocalStorage
 
 ---
 
 ## 🗄️ Gestion des données
 
-Les données sont gérées côté client avec **React State** et **localStorage** afin d’assurer la persistance des informations même après le rafraîchissement de la page.
+Les données sont gérées côté client avec **React State** et **localStorage** afin d’assurer la persistance des informations.
 
-### Principe de fonctionnement
-
-- 📥 **Chargement des données**  
-  Au démarrage de l’application, les données des utilisateurs et routines sont récupérées depuis `localStorage`.
-
-- 🧠 **State Management avec React**  
-  Les données sont stockées dans un `state` central dans l’application.
-
-- 🔄 **Synchronisation automatique**  
-  Toute modification (ajout, suppression, accomplissement) met à jour :
-  - le **state React**
-  - le **localStorage**
-
-- 💾 **Sauvegarde automatique**  
-  Après chaque mise à jour, les données sont enregistrées pour éviter toute perte.
+### Fonctionnement :
+- 📥 Chargement des données depuis `localStorage`
+- 🧠 Gestion via React state
+- 🔄 Mise à jour automatique lors des actions utilisateur
+- 💾 Sauvegarde après chaque modification
 
 ---
 
-## 🎨 Maquette Figma
-
+## 🎨 Figma Design
 👉 [Voir la maquette](https://www.figma.com/design/9FpLI8jPltD6OEmjMqrm4U/Untitled?node-id=0-1&t=AMEGdd4DtIciVS8u-1)
 
 ---
 
-## 👩‍💻 Réalisé par
-
-- **HOUSNA FATHI** – Développeuse web Full-Stack
+## 👩‍💻 Développé par
+**Housna Fathi** – Développeuse Web Full-Stack
