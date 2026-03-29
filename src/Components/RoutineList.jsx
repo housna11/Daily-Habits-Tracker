@@ -3,7 +3,7 @@ import RoutineCard from "./RoutineCard";
 
 function RoutineList({ routines, userId, onDeleteRoutine, onToggleFait }) {
   return (
-    <div className="flex flex-col w-full items-center">
+    <div className="flex flex-col w-full items-center px-2">
       {routines.map(routine => (
         <RoutineCard
           key={routine.id}

@@ -3,7 +3,7 @@ import UserCard from "./UserCard";
 
 function UserList({ users, onDeleteRoutine, onToggleFait }) { 
   return (
-    <div className="w-full h-[450px] p-8 flex justify-between items-start gap-4">
+    <div className="w-full h-auto sm:h-[450px] p-4 sm:p-8 flex flex-col sm:flex-row justify-between items-start gap-4">
       {users.map((user) => (
         <UserCard 
           key={user.id} 
